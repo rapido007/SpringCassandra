@@ -20,6 +20,7 @@ public class MessageController
 	@RequestMapping("/save")
 	public Message save(@RequestParam int id,@RequestParam String message)
 	{
+		System.out.println("save");
 		Message msg = service.saveMessage(id, message);
 		return msg;
 	}
